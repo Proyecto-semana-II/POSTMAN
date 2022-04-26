@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "f1ef845c-a9f0-4e35-a0a0-72b64dae3764",
+		"name": "MS-PARAMETER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-PARAMETER",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET-DETAIL-PARAMETER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/detailParameter",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"detailParameter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-PARAMETER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Tipo Documento\",\r\n\t\"abbreviation\": \"TD\", \r\n\t\"description\": \"Se registran el tipo de Documento.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/parameter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"parameter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-DETAIL-PARAMETER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idParameter\": \"626760d75296c942b578c1bc\",\r\n\t\"name\": \"Juridica\",\r\n\t\"abbreviation\": \"J\", \r\n\t\"description\": \"Tipo de tipo persona juridica.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/detailParameter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"detailParameter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-PARAMETER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Tipo Documento\",\r\n\t\"abbreviation\": \"TD\", \r\n\t\"description\": \"Se registran el tipo de Documento.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/parameter/626761125296c942b578c1bd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"parameter",
+						"626761125296c942b578c1bd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-DETAIL-PARAMETER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idParameter\": \"626761125296c942b578c1bd\",\r\n\t\"name\": \"Registro Unico de Contribuyente\",\r\n\t\"abbreviation\": \"RUC\", \r\n\t\"description\": \"Tipo de documento RUC.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/detailParameter/6267644a5296c942b578c1c1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"detailParameter",
+						"6267644a5296c942b578c1c1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-PARAMETER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/parameter/626768755296c942b578c1c2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"parameter",
+						"626768755296c942b578c1c2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-DETAIL-PARAMETER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/detailParameter/626768985296c942b578c1c3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"detailParameter",
+						"626768985296c942b578c1c3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
