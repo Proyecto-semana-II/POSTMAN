@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "3f00975a-68ff-4d68-bac0-104bcd3ab959",
+		"name": "MS-PERSON",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-PERSON",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-PERSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"idTypePerson\":\"626762df5296c942b578c1be\",  \r\n    \"idTypeDocument\":\"626764065296c942b578c1c0\",\r\n    \"name_BusinessName\":\"Jose Chavez Gatoz\",\r\n    \"numDocumentIdentity\":\"40993666\",\r\n    \"numRUC\":\"\",\r\n    \"fullAdress\":\"Av. Quiroz Armado 454 LIMA\",\r\n    \"email\":\"jrs_systems@hotmail.com\", \r\n    \"registrationStatus\":\"S\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/postCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"postCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-PERSON",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"idTypePerson\": \"626942a8ccf7b85721df024f\",\r\n    \"idTypeDocument\": \"626764065296c942b578c1c0\",\r\n    \"name_BusinessName\": \"Juan Carlos Quiroz\",\r\n    \"numDocumentIdentity\": \"333333\",\r\n    \"numRUC\": \"\",\r\n    \"fullAdress\": \"Av. Quiroz Armado 333 LIMA\",\r\n    \"email\": \"jrs_systems@hotmail.com\",\r\n    \"registrationStatus\": \"S\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update/6267e029969fc62480ab5302",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update",
+						"6267e029969fc62480ab5302"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-PERSON",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/delete/6267e029969fc62480ab5302",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"delete",
+						"6267e029969fc62480ab5302"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
