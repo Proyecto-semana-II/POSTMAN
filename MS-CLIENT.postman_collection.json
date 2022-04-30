@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "51e9b6cc-caa4-4f67-b601-981d368071c3",
+		"name": "MS-CLIENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST-CLIENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n       \"idPerson\": \"626763405296c942b578c1bf\",\r\n\t    \"idTypeClient\":\"626c7921d158173fa420bf78\",\r\n\t    \"idAgency\":\"626c7882d158173fa420bf76\",\r\n\t    \"specialClientIndicator\": \"Hola\",\r\n\t    \"accountableExecutive\": \"Ruiz Perez Carlos\"\r\n\t     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9092/api/postClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"api",
+						"postClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-CLIENT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9092/api/getClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"api",
+						"getClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-CLIENT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"idPerson\": \"626763405296c942b578c1bf\",\r\n    \"idTypeClient\": \"626c7921d158173fa420bf78\",\r\n    \"idAgency\": \"626c7882d158173fa420bf76\",\r\n    \"specialClientIndicator\": \"bUEN DIA\",\r\n    \"accountableExecutive\": \"Juan Carlos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9092/api/update/626c7be5bdd6143e9d109148",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"api",
+						"update",
+						"626c7be5bdd6143e9d109148"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-CLIENT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9092/api/delete/626c7be5bdd6143e9d109148",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"api",
+						"delete",
+						"626c7be5bdd6143e9d109148"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
